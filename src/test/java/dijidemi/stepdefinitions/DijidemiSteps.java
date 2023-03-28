@@ -40,10 +40,17 @@ public class DijidemiSteps {
         assertEquals(ConfigReader.getProperty("personelPage"), Driver.getDriver().getCurrentUrl());
 
         staffPage.icerikButton.click();
+        assertTrue(staffPage.iceriklerLeftSideLink.isDisplayed());
+
 
         try{
-            assertTrue(staffPage.iceriklerLeftSideLink.isDisplayed());
-        }catch(NoSuchElementException e){
+            int numOfImages=staffPage.images.size();
+            System.out.println("numofimages :"+numOfImages);
+            for (int i = 0; i <numOfImages ; i++) {
+                staffPage.images.get(i).isDisplayed();
+            }
+
+        }catch(IndexOutOfBoundsException e){
             log.error(String.format("Error occurred when doing the page loading: %s", e));
             log.error(String.format("Error occurred when doing the page loading: %s", e.getMessage()));
         }
