@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.552">
-    <testcase classname="Dijidemi Login Page UI Test" name="User should be click on a spesific tab and then select a random content after successfully login to the platform" time="24.192">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.132">
+    <testcase classname="Dijidemi Login Page UI Test" name="User should be click on a spesific tab and then select a random content after successfully login to the platform" time="19.772">
         <system-out>
             <![CDATA[Given user goes to dijidemi url.............................................passed
 When user should be login successfully with valid credentials...............passed

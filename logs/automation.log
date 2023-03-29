@@ -40,3 +40,23 @@
 2023-03-28 23:39:49 [main] INFO  Hooks:34 - ===============================================================
 2023-03-28 23:40:04 [main] ERROR DijidemiSteps:54 - Error occurred when doing the page loading: java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
 2023-03-28 23:40:04 [main] ERROR DijidemiSteps:55 - Error occurred when doing the page loading: Index 6 out of bounds for length 6
+2023-03-30 00:24:14 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 00:24:14 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 00:24:14 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 00:24:14 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 00:24:14 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 00:24:14 [main] INFO  Hooks:33 - |          Scenario Name: User should be click on a spesific tab and then select a random content after successfully login to the platform
+2023-03-30 00:24:14 [main] INFO  Hooks:34 - ===============================================================
+2023-03-30 00:24:32 [main] ERROR DijidemiSteps:54 - Error occurred when doing the page loading: java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+2023-03-30 00:24:32 [main] ERROR DijidemiSteps:55 - Error occurred when doing the page loading: Index 6 out of bounds for length 6
+2023-03-30 00:29:34 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 00:29:34 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 00:29:34 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 00:29:34 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 00:29:34 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 00:29:34 [main] INFO  Hooks:33 - |          Scenario Name: User should be click on a spesific tab and then select a random content after successfully login to the platform
+2023-03-30 00:29:34 [main] INFO  Hooks:34 - ===============================================================
+2023-03-30 00:29:48 [main] ERROR DijidemiSteps:54 - Error occurred when doing the page loading: java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+2023-03-30 00:29:48 [main] ERROR DijidemiSteps:55 - Error occurred when doing the page loading: Index 6 out of bounds for length 6

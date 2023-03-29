@@ -22,9 +22,7 @@ public class Driver {
         if (driver==null) {
             switch (ConfigReader.getProperty("browser")){
                 case "chrome":
-                    ChromeOptions options=new ChromeOptions();
-                    options.addArguments("--remote-allow-origins=*");
-                    driver = new ChromeDriver(options);
+                    driver = new ChromeDriver();
                     break;
                 case "edge"    :
                     driver=new EdgeDriver();
