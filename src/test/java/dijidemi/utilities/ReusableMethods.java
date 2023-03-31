@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ReusableMethods {
 
-    private static final Logger log = LoggerFactory.getLogger(ReusableMethods.class);
+
 
     public static void switchToIframe(WebElement webElement) {
         Driver.getDriver().switchTo().frame(webElement);

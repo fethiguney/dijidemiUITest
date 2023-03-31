@@ -60,3 +60,85 @@
 2023-03-30 00:29:34 [main] INFO  Hooks:34 - ===============================================================
 2023-03-30 00:29:48 [main] ERROR DijidemiSteps:54 - Error occurred when doing the page loading: java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
 2023-03-30 00:29:48 [main] ERROR DijidemiSteps:55 - Error occurred when doing the page loading: Index 6 out of bounds for length 6
+2023-03-30 01:29:16 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 01:29:16 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 01:29:16 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 01:29:16 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 01:29:16 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 01:29:16 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-30 01:29:16 [main] INFO  Hooks:34 - ===============================================================
+2023-03-30 01:32:45 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 01:32:45 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 01:32:45 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 01:32:45 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 01:32:45 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 01:32:45 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-30 01:32:45 [main] INFO  Hooks:34 - ===============================================================
+2023-03-30 01:52:02 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 01:52:02 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 01:52:02 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 01:52:02 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 01:52:02 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 01:52:02 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-30 01:52:02 [main] INFO  Hooks:34 - ===============================================================
+2023-03-30 01:58:36 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 01:58:36 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 01:58:36 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 01:58:36 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 01:58:36 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 01:58:36 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-30 01:58:36 [main] INFO  Hooks:34 - ===============================================================
+2023-03-30 14:23:12 [main] INFO  Hooks:22 - ===============================================================
+2023-03-30 14:23:12 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-30 14:23:12 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-30 14:23:12 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-30 14:23:12 [main] INFO  Hooks:32 - ===============================================================
+2023-03-30 14:23:12 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-30 14:23:12 [main] INFO  Hooks:34 - ===============================================================
+2023-03-31 12:08:31 [main] INFO  Hooks:22 - ===============================================================
+2023-03-31 12:08:32 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-31 12:08:32 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-31 12:08:32 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-31 12:08:32 [main] INFO  Hooks:32 - ===============================================================
+2023-03-31 12:08:32 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-31 12:08:32 [main] INFO  Hooks:34 - ===============================================================
+2023-03-31 12:10:15 [main] INFO  Hooks:22 - ===============================================================
+2023-03-31 12:10:15 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-31 12:10:15 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-31 12:10:15 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-31 12:10:15 [main] INFO  Hooks:32 - ===============================================================
+2023-03-31 12:10:15 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-31 12:10:15 [main] INFO  Hooks:34 - ===============================================================
+2023-03-31 13:39:41 [main] INFO  Hooks:22 - ===============================================================
+2023-03-31 13:39:41 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-31 13:39:41 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-31 13:39:41 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-31 13:39:41 [main] INFO  Hooks:32 - ===============================================================
+2023-03-31 13:39:41 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-31 13:39:41 [main] INFO  Hooks:34 - ===============================================================
+2023-03-31 13:59:45 [main] INFO  Hooks:22 - ===============================================================
+2023-03-31 13:59:45 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-31 13:59:45 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-31 13:59:45 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-31 13:59:45 [main] INFO  Hooks:32 - ===============================================================
+2023-03-31 13:59:45 [main] INFO  Hooks:33 - |          Scenario Name: User should be click on a spesific tab and then select a random content after successfully login to the platform
+2023-03-31 13:59:45 [main] INFO  Hooks:34 - ===============================================================
+2023-03-31 14:00:01 [main] ERROR DijidemiSteps:67 - Error occurred when doing the page loading: java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+2023-03-31 14:00:01 [main] ERROR DijidemiSteps:68 - Error occurred when doing the page loading: Index 6 out of bounds for length 6
+2023-03-31 14:00:28 [main] INFO  Hooks:22 - ===============================================================
+2023-03-31 14:00:28 [main] INFO  Hooks:23 - |          Test is Starting...
+2023-03-31 14:00:28 [main] INFO  Hooks:24 - |          Operating System : Windows 10
+2023-03-31 14:00:28 [main] INFO  Hooks:25 - ===============================================================
+
+2023-03-31 14:00:28 [main] INFO  Hooks:32 - ===============================================================
+2023-03-31 14:00:28 [main] INFO  Hooks:33 - |          Scenario Name: User should not login with invalid credentials
+2023-03-31 14:00:28 [main] INFO  Hooks:34 - ===============================================================

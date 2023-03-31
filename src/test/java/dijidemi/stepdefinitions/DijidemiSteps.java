@@ -2,10 +2,14 @@ package dijidemi.stepdefinitions;
 
 import dijidemi.pages.*;
 import dijidemi.utilities.*;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.*;
+
+import java.util.List;
+import java.util.Map;
 
 import static dijidemi.utilities.ReusableMethods.*;
 import static org.junit.Assert.*;
@@ -23,16 +27,26 @@ public class DijidemiSteps {
         Driver.getDriver().get(ConfigReader.getProperty("dijidemiUrl"));
     }
 
-    @When("user should be login successfully with valid credentials")
-    public void user_should_be_login_successfully_with_valid_credentials() {
+    @When("^user should (not login|be login) with (invalid|valid) credentials$")
+    public void user_should_not_login_with_invalid_credential(String status, String input) {
         homePage.loginLink.click();
         assertEquals(ConfigReader.getProperty("loginPage"), Driver.getDriver().getCurrentUrl());
 
-        loginPage.username.sendKeys(ConfigReader.getProperty("username"));
-        loginPage.password.sendKeys(ConfigReader.getProperty("password"));
+        if (status.equalsIgnoreCase("not login")){
+            if (input.equalsIgnoreCase("invalid")){
+                loginPage.username.sendKeys(ConfigReader.getProperty("invalidUsername"));
+                loginPage.password.sendKeys(ConfigReader.getProperty("invalidPassword"));
+            }
+        } else if (status.equalsIgnoreCase("be login")) {
+            if (input.equalsIgnoreCase("valid")) {
+                loginPage.username.sendKeys(ConfigReader.getProperty("validUsername"));
+                loginPage.password.sendKeys(ConfigReader.getProperty("validPassword"));
+            }
+        }
         loginPage.loginButton.click();
 
     }
+
 
     @When("user clicks on icerik tab and validates that is navigated icerikler")
     public void user_clicks_on_icerik_tab_and_validates_that_is_navigated_icerikler() {
@@ -71,4 +85,6 @@ public class DijidemiSteps {
 
 
     }
+
+
 }
