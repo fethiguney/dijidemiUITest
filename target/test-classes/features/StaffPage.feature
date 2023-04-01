@@ -5,7 +5,7 @@
     Scenario: User should not login with invalid credentials
       Given user goes to dijidemi url
       When user should not login with invalid credentials
-
+      Then validate that user is warned "Kullanıcı adı ya da şifreniz yanlış!" message
 
 
     @selectContent

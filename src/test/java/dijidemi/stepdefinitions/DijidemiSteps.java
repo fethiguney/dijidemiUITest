@@ -87,4 +87,8 @@ public class DijidemiSteps {
     }
 
 
+    @Then("validate that user is warned {string} message")
+    public void validateThatUserIsWarnedMessage(String message) {
+        assertTrue(loginPage.alertMessage.getText().contains(message));
+    }
 }

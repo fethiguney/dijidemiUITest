@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.791">
-    <testcase classname="Dijidemi Login Page UI Test" name="User should be click on a spesific tab and then select a random content after successfully login to the platform" time="22.437">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.921">
+    <testcase classname="Dijidemi Login Page UI Test" name="User should not login with invalid credentials" time="12.552">
         <system-out>
             <![CDATA[Given user goes to dijidemi url.............................................passed
-When user should be login with valid credentials............................passed
-And user clicks on icerik tab and validates that is navigated icerikler.....passed
-Then user clicks on the 1 st content and validates that it is loaded........passed
+When user should not login with invalid credentials.........................passed
+Then validate that user is warned "Kullanıcı adı ya da şifreniz yanlış!" message.passed
 ]]>
         </system-out>
     </testcase>

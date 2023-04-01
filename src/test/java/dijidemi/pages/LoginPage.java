@@ -16,6 +16,9 @@ public class LoginPage {
     @FindBy (css = "a#btnLogin")
     public WebElement loginButton;
 
+    @FindBy (css = "div.alert.alert-danger")
+    public WebElement alertMessage;
+
 
     public LoginPage() {PageFactory.initElements(Driver.getDriver(), this); }
 }
