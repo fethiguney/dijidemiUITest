@@ -27,21 +27,19 @@ public class DijidemiSteps {
         Driver.getDriver().get(ConfigReader.getProperty("dijidemiUrl"));
     }
 
-    @When("^user should (not login|be login) with (invalid|valid) credentials$")
-    public void user_should_not_login_with_invalid_credential(String status, String input) {
+    @When("^user should (?:not login|be login) with (invalid|valid) credentials$")
+    public void user_should_not_login_with_invalid_credential(String status) {
         homePage.loginLink.click();
         assertEquals(ConfigReader.getProperty("loginPage"), Driver.getDriver().getCurrentUrl());
 
-        if (status.equalsIgnoreCase("not login")){
-            if (input.equalsIgnoreCase("invalid")){
+        if (status.equalsIgnoreCase("invalid")){
                 loginPage.username.sendKeys(ConfigReader.getProperty("invalidUsername"));
                 loginPage.password.sendKeys(ConfigReader.getProperty("invalidPassword"));
-            }
-        } else if (status.equalsIgnoreCase("be login")) {
-            if (input.equalsIgnoreCase("valid")) {
+
+        } else if (status.equalsIgnoreCase("valid")) {
                 loginPage.username.sendKeys(ConfigReader.getProperty("validUsername"));
                 loginPage.password.sendKeys(ConfigReader.getProperty("validPassword"));
-            }
+
         }
         loginPage.loginButton.click();
 
