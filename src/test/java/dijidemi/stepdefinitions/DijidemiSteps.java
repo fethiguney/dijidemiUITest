@@ -27,25 +27,28 @@ public class DijidemiSteps {
         Driver.getDriver().get(ConfigReader.getProperty("dijidemiUrl"));
     }
 
-    @When("^user should (?:not login|be login) with (invalid|valid) credentials$")
-    public void user_should_not_login_with_invalid_credential(String status) {
+    @When("^user should (?:not login|be login) with (?:invalid|valid) credentials$")
+    public void user_should_not_login_with_invalid_credential(DataTable dataTable) {
         homePage.loginLink.click();
         assertEquals(ConfigReader.getProperty("loginPage"), Driver.getDriver().getCurrentUrl());
 
-        if (status.equalsIgnoreCase("invalid")){
-                loginPage.username.sendKeys(ConfigReader.getProperty("invalidUsername"));
-                loginPage.password.sendKeys(ConfigReader.getProperty("invalidPassword"));
+        dataTable.asMaps();
 
-        } else if (status.equalsIgnoreCase("valid")) {
-                loginPage.username.sendKeys(ConfigReader.getProperty("validUsername"));
-                loginPage.password.sendKeys(ConfigReader.getProperty("validPassword"));
-
-        }
         loginPage.loginButton.click();
 
     }
 
+  /*   if (status.equalsIgnoreCase("invalid")){
+        loginPage.username.sendKeys(ConfigReader.getProperty("invalidUsername"));
+        loginPage.password.sendKeys(ConfigReader.getProperty("invalidPassword"));
 
+    } else if (status.equalsIgnoreCase("valid")) {
+        loginPage.username.sendKeys(ConfigReader.getProperty("validUsername"));
+        loginPage.password.sendKeys(ConfigReader.getProperty("validPassword"));
+
+    }
+
+*/
     @When("user clicks on icerik tab and validates that is navigated icerikler")
     public void user_clicks_on_icerik_tab_and_validates_that_is_navigated_icerikler() {
         waitForVisibility(staffPage.icerikButton, 5);
