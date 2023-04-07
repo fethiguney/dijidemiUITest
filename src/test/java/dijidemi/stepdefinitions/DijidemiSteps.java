@@ -32,23 +32,14 @@ public class DijidemiSteps {
         homePage.loginLink.click();
         assertEquals(ConfigReader.getProperty("loginPage"), Driver.getDriver().getCurrentUrl());
 
-        dataTable.asMaps();
-
-        loginPage.loginButton.click();
-
-    }
-
-  /*   if (status.equalsIgnoreCase("invalid")){
-        loginPage.username.sendKeys(ConfigReader.getProperty("invalidUsername"));
-        loginPage.password.sendKeys(ConfigReader.getProperty("invalidPassword"));
-
-    } else if (status.equalsIgnoreCase("valid")) {
-        loginPage.username.sendKeys(ConfigReader.getProperty("validUsername"));
-        loginPage.password.sendKeys(ConfigReader.getProperty("validPassword"));
+       List<Map<String, String>> data= dataTable.asMaps();
+       loginPage.username.sendKeys(data.get(0).get("username"));
+       loginPage.password.sendKeys(data.get(0).get("password"));
+       loginPage.loginButton.click();
 
     }
 
-*/
+
     @When("user clicks on icerik tab and validates that is navigated icerikler")
     public void user_clicks_on_icerik_tab_and_validates_that_is_navigated_icerikler() {
         waitForVisibility(staffPage.icerikButton, 5);

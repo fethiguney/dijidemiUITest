@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.183">
-    <testcase classname="Dijidemi Login Page UI Test" name="User should not login with invalid credentials" time="22.447">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.11">
+    <testcase classname="Dijidemi Login Page UI Test" name="User should not login with invalid credentials" time="16.708">
         <system-out>
             <![CDATA[Given user goes to dijidemi url.............................................passed
 When user should not login with invalid credentials.........................passed
