@@ -3,6 +3,7 @@ package dijidemi.utilities;
 import dijidemi.stepdefinitions.DijidemiSteps;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -17,8 +18,34 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
+enum ClickType{
+    DEFAULT,
+    ACTIONS,
+    JSEXECUTOR
+}
 
 public class ReusableMethods {
+
+   static Actions actions=new Actions(Driver.getDriver());
+   static JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+
+   public static void click(WebElement element, ClickType clickType){
+
+       switch (clickType) {
+           case DEFAULT:
+               element.click();
+               break;
+
+           case ACTIONS:
+               actions.moveToElement(element).click().perform();
+               break;
+
+           case JSEXECUTOR:
+               js.executeScript("arguments[0].scrollIntoView(true);", element);
+               js.executeScript("arguments[0].click()", element);
+       }
+   }
+
 
 
 
