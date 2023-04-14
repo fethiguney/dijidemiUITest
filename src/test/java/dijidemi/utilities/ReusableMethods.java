@@ -1,5 +1,6 @@
 package dijidemi.utilities;
 
+import dijidemi.ClickType;
 import dijidemi.stepdefinitions.DijidemiSteps;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -18,11 +19,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-enum ClickType{
-    DEFAULT,
-    ACTIONS,
-    JSEXECUTOR
-}
 
 public class ReusableMethods {
 
@@ -30,22 +26,19 @@ public class ReusableMethods {
    static JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 
    public static void click(WebElement element, ClickType clickType){
-
        switch (clickType) {
            case DEFAULT:
                element.click();
                break;
-
            case ACTIONS:
                actions.moveToElement(element).click().perform();
                break;
-
            case JSEXECUTOR:
                js.executeScript("arguments[0].scrollIntoView(true);", element);
                js.executeScript("arguments[0].click()", element);
        }
    }
-
+   //sample of usage click(submitButton, ClickType.ACTIONS);
 
 
 
