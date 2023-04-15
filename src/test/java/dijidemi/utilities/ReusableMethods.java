@@ -1,21 +1,17 @@
 package dijidemi.utilities;
 
-import dijidemi.ClickType;
-import dijidemi.stepdefinitions.DijidemiSteps;
+import dijidemi.enums.ClickType;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
-import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 

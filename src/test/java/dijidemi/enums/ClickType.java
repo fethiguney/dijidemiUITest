@@ -1,4 +1,4 @@
-package dijidemi;
+package dijidemi.enums;
 
 public enum ClickType {
     DEFAULT,
