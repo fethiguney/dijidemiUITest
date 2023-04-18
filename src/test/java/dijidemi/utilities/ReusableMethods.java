@@ -44,6 +44,7 @@ public class ReusableMethods {
 
     public static String getScreenshot(String name) throws IOException {
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
         File source = ts.getScreenshotAs(OutputType.FILE);
         String target = System.getProperty("user.dir") + "/target/Screenshots/" + name + date + ".png";
@@ -55,6 +56,10 @@ public class ReusableMethods {
     public static WebElement waitForVisibility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOf(element));
+
+
+
+
     }
 
 
