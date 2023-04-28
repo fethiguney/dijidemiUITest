@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-    @FindBy (xpath = "(//a[@href='/Login'])[2]")
+    @FindBy (xpath = "//div[starts-with (@class, 'header-button d-none')]//a[@href='/Login']")
     public WebElement loginLink;
 
 
